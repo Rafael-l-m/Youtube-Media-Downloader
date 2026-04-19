@@ -502,8 +502,8 @@ namespace UI_CONSTANTS {
         inline const QString DEFAULT_DATA_SUFFIX = ".dat";
         inline QString DEFAULT_DATA_FILTER() {return QObject::tr("DATA (*.dat);;");}
 
-        inline const auto URL_REPO = QUrl("https://github.com/Rafael-l-m/YouTubeMediaDownloader");
-        inline const auto URL_REPORT_ISSUES = QUrl("https://github.com/Rafael-l-m/YouTubeMediaDownloader/issues/new");
+        inline const auto URL_REPO = QUrl("https://github.com/Rafael-l-m/Youtube-Media-Downloader");
+        inline const auto URL_REPORT_ISSUES = QUrl("https://github.com/Rafael-l-m/Youtube-Media-Downloader/issues/new");
 
         inline const QString STYLE = R"(
             QMainWindow {

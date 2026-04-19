@@ -104,10 +104,16 @@ if (UNIX OR APPLE)
     include_directories(${Boost_INCLUDE_DIRS})
 
 elseif (WIN32)
+    set_target_properties(MediaDownloader PROPERTIES WIN32_EXECUTABLE TRUE)
+
+    set(APP_ICON "${CMAKE_SOURCE_DIR}/resources/icons/AppIcon.ico")
+    target_sources(MediaDownloader PRIVATE resources/MediaDownloader.rc)
+    target_compile_definitions(MediaDownloader PRIVATE APP_ICON_PATH="${APP_ICON}")
+
     #import boost
     set(BOOST_ROOT "${CMAKE_SOURCE_DIR}/external/boost_1_90_0")
     target_include_directories(MediaDownloader PRIVATE ${BOOST_ROOT})
-    
+
     # import libsodium
     set(LIBSODIUM_ROOT "${CMAKE_SOURCE_DIR}/external/libsodium")
     target_include_directories(MediaDownloader PRIVATE ${LIBSODIUM_ROOT}/include)

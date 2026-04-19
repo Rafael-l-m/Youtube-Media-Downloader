@@ -10,7 +10,7 @@ namespace UPDATE_CONSTANTS::UPDATE_CHECKER {
         inline const QString ASSETS = "assets";
         inline const QString BROWSER_DOWNLOAD_URL = "browser_download_url";
 
-        inline const auto URL_GET_UPDATES = QUrl("https://api.github.com/repos/Rafael-l-m/YouTubeMediaDownloader/releases/latest");
+        inline const auto URL_GET_UPDATES = QUrl("https://api.github.com/repos/Rafael-l-m/Youtube-Media-Downloader/releases/latest");
 
         inline QString UPDATE_AVAILABLE() {return QObject::tr("Update Available");}
         inline QString UPDATE_INFORMATION(const QString& version, const QString& notes) {return QObject::tr("New Version: %1\n\n%2").arg(version, notes);}
