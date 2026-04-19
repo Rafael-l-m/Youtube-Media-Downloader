@@ -4,13 +4,15 @@ A multi-threaded **YouTube media downloader** with flexible format control. The 
 
 -    Automatically fetch the highest‑quality audio or video stream
     
--    Select a specific **itag** for custom output formats.
+-    Select a specific **itag** for custom output formats
     
-Ideal for users who want both convenience and fine‑grained control over YouTube media extraction.
+Ideal for users who want both convenience and fine‑grained control over YouTube media extraction
 
-**Warning for macOs users**: If macOS displays a message stating that the application “cannot be opened,” users may enable it manually by navigating to **System Settings → Privacy & Security** and allowing the app. This warning appears because the application has not undergone Apple’s notarization process, which requires enrollment in the paid Apple Developer Program.
+**Warning for macOs users**: If macOS displays a message stating that the application “cannot be opened,” users may enable it manually by navigating to **System Settings → Privacy & Security** and allowing the app. This warning appears because the application has not undergone Apple’s notarization process, which requires enrollment in the paid Apple Developer Program
 
-**This application has undergone basic testing, but it has not yet been extensively tested on Windows or Linux. Feedback is highly appreciated — any issues you report will play an important role in improving and shaping the future of this project. Thank you very much for your support.**
+**Warning for Windows users**: when downloading the installer from Github, Windows may show a **SmartScreen** such as: "Unknown publisher", "This app might put your PC at risk". This happens because the installer is **not code-signed**. Unsigned applications are common in open-source projects, and this warning does not mean the file is harmful
+
+**This application has undergone basic testing, but it has not yet been extensively tested on Windows or Linux. Feedback is highly appreciated — any issues you report will play an important role in improving and shaping the future of this project. Thank you very much for your support**
 
 
 <br><br>
