@@ -155,25 +155,20 @@ For **Intel-Mac** users: you can use **Rosetta**, but you shouldn’t install to
 
 <br>
 
-## Linux x86-64 (glibc >= 2.31)
+## Linux x86-64 (glibc >= 2.31) (GCC >= 9)
 
 - Ubuntu 20.04+
 - Debian 11+
-- Fedora 38+
+- Fedora 32+
 - RHEL 8.4+
 - RHEL 9+
 - Rocky / AlmaLinux 8+
-- openSUSE Leap 15.4+
+- openSUSE Leap 15.3+
 - openSUSE Tumbleweed
 - Arch Linux
+- Linux Mint 20+
 - Manjaro
 - EndeavourOS
-
-### Linux Mint
-
-- Mint 20
-- Mint 21
-- Mint 22
 
 
 <br><br>
