@@ -2,6 +2,7 @@
 #pragma once
 
 #include <QApplication>
+#include <QPair>
 #include <QUrl>
 
 namespace UI_CONSTANTS {
@@ -10,9 +11,9 @@ namespace UI_CONSTANTS {
         inline constexpr int DEFAULT_VALUE_PROGRESS_BAR = 0;
         inline constexpr int DURATION_ANIMATION = 4000;
 
-        inline constexpr QPair TEXT_BROWSER_SIZE {0,30};
-        inline constexpr QPair PROGRESS_BAR_SIZE {0,20};
-        inline constexpr QPair RANGE_PROGRESS_BAR {0,1000};
+        inline constexpr QPair<int,int> TEXT_BROWSER_SIZE {0,30};
+        inline constexpr QPair<int,int> PROGRESS_BAR_SIZE {0,20};
+        inline constexpr QPair<int,int> RANGE_PROGRESS_BAR {0,1000};
 
         inline QString EDIT_BTN() {return QObject::tr("Edit");}
         inline QString REMOVE_BTN() {return QObject::tr("Remove");}
@@ -94,10 +95,10 @@ namespace UI_CONSTANTS {
         inline constexpr int WAIT_INTERVAL_FOR_I_TAGS_INPUT = 1200;
         inline constexpr int SLEEP_TIME = 1000;
 
-        inline constexpr QPair WINDOW_SIZE {850, 650};
-        inline constexpr QPair LINEEDIT_SIZE {600, 35};
-        inline constexpr QPair OUTPUT_LAYOUT_LINEEDIT_SIZE {LINEEDIT_SIZE.first - 100, LINEEDIT_SIZE.second};
-        inline constexpr QPair COMBO_SIZE {275, 25};
+        inline constexpr QPair<int,int> WINDOW_SIZE {850, 650};
+        inline constexpr QPair<int,int> LINEEDIT_SIZE {600, 35};
+        inline constexpr QPair<int,int> OUTPUT_LAYOUT_LINEEDIT_SIZE {LINEEDIT_SIZE.first - 100, LINEEDIT_SIZE.second};
+        inline constexpr QPair<int,int> COMBO_SIZE {275, 25};
 
         inline QString GENERAL_INFORMATION() {return QObject::tr("General");}
         inline QString DOWNLOAD_CONFIG() {return QObject::tr("Config");}
@@ -386,11 +387,11 @@ namespace UI_CONSTANTS {
         inline constexpr int BLUR_RADIUS = 40;
         inline constexpr double DIVISOR_HIGHLIGHT_Y_FINAL_STOP = 2.0;
 
-        inline const QVector Q_RECT_ADJUSTED = {2,2,-2,-2};
-        inline const QVector HIGHLIGHTS_START = {0,0,0};
+        inline const QVector<int> Q_RECT_ADJUSTED = {2,2,-2,-2};
+        inline const QVector<int> HIGHLIGHTS_START = {0,0,0};
 
-        inline constexpr QPair RADIUS_DRAW_ROUNDED_RECT = {20,20};
-        inline constexpr QPair HIGHLIGHT_POS = {0.0,1.0};
+        inline constexpr QPair<int,int> RADIUS_DRAW_ROUNDED_RECT = {20,20};
+        inline constexpr QPair<double,double> HIGHLIGHT_POS = {0.0,1.0};
 
         inline constexpr QColor COLOR_PAINT_SET_BRUSH_1 = {0,0,0,60};
         inline constexpr QColor COLOR_PAINT_SET_BRUSH_2 = {250,250,250,80};
@@ -416,7 +417,7 @@ namespace UI_CONSTANTS {
         inline constexpr int WAIT_INTERVAL_CLIENT = 1000;
         inline constexpr int DEFAULT_ERROR_SERVER_PORT = -1;
 
-        inline constexpr QPair WINDOW_SIZE {800,600};
+        inline constexpr QPair<int,int> WINDOW_SIZE {800,600};
         inline const QList CONTENTS_MARGINS_SIZE {50,10,50,10};
 
         inline QString WINDOW_TITLE() {return QObject::tr("Media Downloader (Official Release v1.0.0)");}
@@ -653,12 +654,12 @@ namespace UI_CONSTANTS {
         namespace Q_LIST_WIDGET {
             inline constexpr int PAGE_SIZE = 50;
             inline constexpr int DIFFERENCE_PAGES = 3;
-            inline constexpr QPair ITEM_SIZE {0, 65};
+            inline constexpr QPair<int,int> ITEM_SIZE {0, 65};
         }
     }
 
     namespace NOTICE_VIEW {
-        inline constexpr QPair SHOW_ICON_SIZE {50,50};
+        inline constexpr QPair<int,int> SHOW_ICON_SIZE {50,50};
 
         inline QString YES_BTN() {return QObject::tr("OK");}
         inline QString NO_BTN() {return QObject::tr("No");}
@@ -737,9 +738,9 @@ namespace UI_CONSTANTS {
     namespace SETTINGS_VIEW {
         inline constexpr bool DEFAULT_IF_AUDIO = true;
 
-        inline constexpr QPair WINDOW_SIZE {750,450};
-        inline constexpr QPair LINEEDIT_SIZE {450,25};
-        inline constexpr QPair GRID_FIXED_SPACING {20,20};
+        inline constexpr QPair<int,int> WINDOW_SIZE {750,450};
+        inline constexpr QPair<int,int> LINEEDIT_SIZE {450,25};
+        inline constexpr QPair<int,int> GRID_FIXED_SPACING {20,20};
 
         inline QString YT_DLP() {
             #ifdef Q_OS_WIN
@@ -872,7 +873,7 @@ namespace UI_CONSTANTS {
     }
 
     namespace SHOW_I_TAGS {
-        inline constexpr QPair WINDOW_SIZE {1000,450};
+        inline constexpr QPair<int,int> WINDOW_SIZE {1000,450};
 
         inline QString TITLE() {return QObject::tr("Show Itags");}
 

@@ -459,6 +459,7 @@ namespace UI {
                 dialog.setOptions(QFileDialog::DontUseNativeDialog);
             #elif defined(Q_OS_WIN)
             #elif defined(Q_OS_LINUX)
+                dialog.setOptions(QFileDialog::DontUseNativeDialog);
                 dialog.setFileMode(QFileDialog::AnyFile);
                 dialog.setOption(QFileDialog::ShowDirsOnly, false);
                 dialog.setAcceptMode(QFileDialog::AcceptSave);

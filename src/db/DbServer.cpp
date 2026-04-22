@@ -1,5 +1,6 @@
 
 #include "db/DbServer.hpp"
+#include <QJsonParseError>
 
 namespace DB {
     // Public

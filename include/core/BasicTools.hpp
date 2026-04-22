@@ -114,8 +114,13 @@ namespace CORE {
         static bool writeConfig(const QMap<QString, QString>& map, const QString& organization = CORE_CONSTANTS::SETTINGS_VIEW::DEFAULT_ORGANIZATION, const QString& application = CORE_CONSTANTS::SETTINGS_VIEW::DEFAULT_APPLICATION) {
             QSettings userSettings(QSettings::UserScope, organization, application);
 
+        #ifdef Q_OS_LINUX
+            // Qt 6.2.4
+            for (auto it = map.begin(); it != map.end(); ++it) {userSettings.setValue(it.key(), it.value());}
+        #else
+            // Qt 6.11.0
             for (const auto& [key, value] : map.asKeyValueRange()) {userSettings.setValue(key, value);}
-
+        #endif
             userSettings.sync();
 
             return userSettings.status() == QSettings::NoError;

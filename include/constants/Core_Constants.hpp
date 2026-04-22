@@ -34,6 +34,7 @@ namespace CORE_CONSTANTS {
                 searchPaths << "/usr/bin"
                             << "/usr/local/bin"
                             << "/snap/bin"
+                            << "snap/local/bin"
                             << "/bin"
                             << "/home/linuxbrew/.linuxbrew";
             #elif defined(Q_OS_WIN)

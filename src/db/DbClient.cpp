@@ -1,5 +1,6 @@
 
 #include "db/DbClient.hpp"
+#include <QJsonDocument>
 #include <QTimer>
 
 namespace DB {

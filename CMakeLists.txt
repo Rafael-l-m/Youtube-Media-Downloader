@@ -12,7 +12,7 @@ if (APPLE)
 elseif (WIN32)
     set(CMAKE_PREFIX_PATH "C:/Qt/6.11.0/mingw_64")
 elseif (UNIX AND NOT APPLE)
-    set(CMAKE_PREFIX_PATH "/home/rafael/Applications/Qt/6.11.0/gcc_64")
+    set(CMAKE_PREFIX_PATH "/home/rafael/Applications/Qt/6.2.4/gcc_64")
 endif ()
 
 # Test Use-after-free (Azan)

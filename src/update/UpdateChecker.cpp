@@ -3,6 +3,7 @@
 #include "constants/Update_Constants.hpp"
 #include "update/UpdateChecker.hpp"
 #include <QJsonArray>
+#include <QJsonDocument>
 #include <QJsonObject>
 #include <QNetworkReply>
 

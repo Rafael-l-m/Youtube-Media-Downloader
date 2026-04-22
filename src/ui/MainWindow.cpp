@@ -307,6 +307,9 @@ namespace UI {
         #ifdef Q_OS_MAC
             dialog.setOptions(QFileDialog::DontUseNativeDialog);
             dialog.setStyleSheet(UI_CONSTANTS::DOWNLOAD_CONFIG::STYLE);
+        #elif defined(Q_OS_LINUX)
+            dialog.setOptions(QFileDialog::DontUseNativeDialog);
+            dialog.setStyleSheet(UI_CONSTANTS::DOWNLOAD_CONFIG::STYLE);
         #endif
 
         dialog.setFilter(dialog.filter() | QDir::Hidden | QDir::NoDotAndDotDot);
@@ -350,6 +353,8 @@ namespace UI {
             dialog.setStyleSheet(UI_CONSTANTS::DOWNLOAD_CONFIG::STYLE);
         #elif defined(Q_OS_WIN)
         #elif defined(Q_OS_LINUX)
+            dialog.setOptions(QFileDialog::DontUseNativeDialog);
+            dialog.setStyleSheet(UI_CONSTANTS::DOWNLOAD_CONFIG::STYLE);
             dialog.setFileMode(QFileDialog::AnyFile);
             dialog.setOption(QFileDialog::ShowDirsOnly, false);
             dialog.setAcceptMode(QFileDialog::AcceptSave);

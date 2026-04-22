@@ -3,6 +3,7 @@
 
 #include "constants/Ui_Constants.hpp"
 #include <QDialog>
+#include <QIcon>
 #include <QLabel>
 #include <QVBoxLayout>
 

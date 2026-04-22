@@ -4,6 +4,7 @@
 #include "core/SharedStorage.hpp"
 #include "ui/ShowItags.hpp"
 #include <QDir>
+#include <QIcon>
 
 namespace UI {
     // Public

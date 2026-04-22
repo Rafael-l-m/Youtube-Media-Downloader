@@ -2,6 +2,7 @@
 #pragma once
 
 #include <QMutex>
+#include <QString>
 
 namespace CONTAINER {
     class ToolsPath final {
